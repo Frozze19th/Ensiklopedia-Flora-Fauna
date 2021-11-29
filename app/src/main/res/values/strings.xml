@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">Flora</string>
+    <string name="title_fauna">Fauna</string>
+    <string name="title_Identitas">Identitas</string>
+    <string name="nama_own">Irfan Novian</string>
+    <string name="detail_own">NIM : H1D018061</string>
+    <string name="detail">Detail: </string>
+    <string name="detail_flora">Detail Flora: </string>
+
+</resources>

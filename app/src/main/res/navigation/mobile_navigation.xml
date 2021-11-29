@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_flora">
+
+    <fragment
+        android:id="@+id/navigation_flora"
+        android:name="com.example.myapplication.ui.flora.FloraFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_navigation_flora_self2"
+            app:destination="@id/navigation_flora" />
+        <action
+            android:id="@+id/action_navigation_flora_to_navigation_fauna2"
+            app:destination="@id/navigation_fauna" />
+        <action
+            android:id="@+id/action_navigation_flora_to_navigation_identitas2"
+            app:destination="@id/navigation_identitas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_fauna"
+        android:name="com.example.myapplication.ui.fauna.FaunaFragment"
+        android:label="@string/title_fauna"
+        tools:layout="@layout/fragment_fauna">
+        <action
+            android:id="@+id/action_navigation_fauna_to_navigation_flora3"
+            app:destination="@id/navigation_flora" />
+        <action
+            android:id="@+id/action_navigation_fauna_self2"
+            app:destination="@id/navigation_fauna" />
+        <action
+            android:id="@+id/action_navigation_fauna_to_navigation_identitas"
+            app:destination="@id/navigation_identitas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_identitas"
+        android:name="com.example.myapplication.ui.identitas.IdentitasFragment"
+        android:label="@string/title_Identitas"
+        tools:layout="@layout/fragment_identitas">
+        <action
+            android:id="@+id/action_navigation_identitas_to_navigation_flora"
+            app:destination="@id/navigation_flora" />
+        <action
+            android:id="@+id/action_navigation_identitas_to_navigation_fauna"
+            app:destination="@id/navigation_fauna" />
+        <action
+            android:id="@+id/action_navigation_identitas_self"
+            app:destination="@id/navigation_identitas" />
+    </fragment>
+</navigation>

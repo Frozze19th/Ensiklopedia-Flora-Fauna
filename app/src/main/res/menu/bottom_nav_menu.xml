@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/navigation_flora"
+        android:icon="@drawable/tree"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@id/navigation_fauna"
+        android:icon="@drawable/lion"
+        android:title="@string/title_fauna" />
+
+    <item
+        android:id="@id/navigation_identitas"
+        android:icon="@drawable/identitas"
+        android:title="@string/title_Identitas" />
+
+</menu>
